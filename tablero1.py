@@ -36,7 +36,7 @@ with steps[1]:
 with steps[2]:
     st.selectbox('escoja una opcion, [1,2,3]', ['opcion 1','opcion 2','opcion 3'], key='selectbox1')
 
-with steps[3]:
+'''with steps[3]:
     camp_df = pd.read_csv('Campanhas.csv', encoding='latin-1', sep=';')
     camp = st.selectbox('Escoge un ID de campaña', camp_df['ID_Campana'], help='Selecciona un ID de campaña')
     
@@ -54,7 +54,7 @@ with steps[3]:
               delta=str(np.mean(id2['Impresiones']))+'total de Rebotes',
               delta_color='inverse')
     
-   ''' with steps[3]:
+    with steps[3]:
         
         df=pd.read_csv("https://raw.githubusercontent.com/diplomado-bigdata-machinelearning-udea/Curso1/master/s03/dataVentas2009.csv")
         df.Fecha = pd.to_datetime(df.Fecha, format='%d/%m/%Y')
