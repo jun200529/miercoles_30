@@ -54,7 +54,7 @@ with steps[3]:
               delta=str(np.mean(id2['Impresiones']))+'total de Rebotes',
               delta_color='inverse')
     
-    with steps[3]:
+   ''' with steps[3]:
         
         df=pd.read_csv("https://raw.githubusercontent.com/diplomado-bigdata-machinelearning-udea/Curso1/master/s03/dataVentas2009.csv")
         df.Fecha = pd.to_datetime(df.Fecha, format='%d/%m/%Y')
@@ -65,4 +65,5 @@ with steps[3]:
         fig, ax = plt.subplots()
         ax=sns.histplot(data=df, x=varx)
         st.pyplot(fig)
+        '''
         
