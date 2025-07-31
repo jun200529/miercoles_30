@@ -36,7 +36,7 @@ with steps[1]:
 with steps[2]:
     st.selectbox('escoja una opcion, [1,2,3]', ['opcion 1','opcion 2','opcion 3'], key='selectbox1')
 
-'''with steps[3]:
+with steps[3]:
     camp_df = pd.read_csv('Campanhas.csv', encoding='latin-1', sep=';')
     camp = st.selectbox('Escoge un ID de campaña', camp_df['ID_Campana'], help='Selecciona un ID de campaña')
     
@@ -65,5 +65,5 @@ with steps[2]:
         fig, ax = plt.subplots()
         ax=sns.histplot(data=df, x=varx)
         st.pyplot(fig)
-        '''
+        
         
